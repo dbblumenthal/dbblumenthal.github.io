@@ -166,7 +166,6 @@
 						</div>
 					</div>
 				</div>
-				
 				<!-- VLDB J. 2020b -->
 				<div class="wrap-collabsible left-align">
 					<input id="vldbj2020b" class="toggle" type="checkbox">
@@ -205,10 +204,10 @@
 						</div>
 					</div>
 				</div>
-				<!-- PRL 2020 -->
+				<!-- PRL 2020 (Improved local search ...)-->
 				<div class="wrap-collabsible left-align">
-					<input id="prl2020" class="toggle" type="checkbox">
-					<label for="prl2020" class="lbl-toggle">
+					<input id="prl2020c" class="toggle" type="checkbox">
+					<label for="prl2020c" class="lbl-toggle">
 						<strong>[2020]</strong> Nicolas Boria, David B. Blumenthal, S&eacute;bastien Bougleux, and Luc Brun:
 						&ldquo;Improved local search for graph edit distance&rdquo;,
 						<strong>Pattern Recognit. Lett. 129</strong>, pp. 19-25.
@@ -219,7 +218,45 @@
 								<strong>Abstract</strong> The graph edit distance (GED) measures the dissimilarity between two graphs as the minimal cost of a sequence of elementary operations transforming one graph into another. This measure is fundamental in many areas such as structural pattern recognition or classification. However, exactly computing GED is NP-hard. Among different classes of heuristic algorithms that were proposed to compute approximate solutions, local search based algorithms provide the tightest upper bounds for GED. In this paper, we present K-REFINE and RANDPOST. K-REFINE generalizes and improves an existing local search algorithm and performs particularly well on small graphs. RANDPOST is a general warm start framework that stochastically generates promising initial solutions to be used by any local search based GED algorithm. It is particularly efficient on large graphs. An extensive empirical evaluation demonstrates that both K-REFINE and RANDPOST perform excellently in practice.
 							</p>
 							<p>
-								<a href="https://doi.org/10.1016/j.patrec.2019.10.028" target="_blank">doi</a> | <a href="res/prl2020.bib" target="_blank">bibtex</a>
+								<a href="https://doi.org/10.1016/j.patrec.2019.10.028" target="_blank">doi</a> | <a href="res/prl2020c.bib" target="_blank">bibtex</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- PRL 2020 (On the exact ...)-->
+				<div class="wrap-collabsible left-align">
+					<input id="prl2020a" class="toggle" type="checkbox">
+					<label for="prl2020a" class="lbl-toggle">
+						<strong>[2020]</strong> David B. Blumenthal and Johann Gamper:
+						&ldquo;On the exact computation of the graph edit distance&rdquo;,
+						<strong>Pattern Recognit. Lett. 134</strong>, pp. 46-57.
+					</label>
+					<div class="collapsible-content">
+						<div class="content-inner">
+							<p>
+								<strong>Abstract</strong> The graph edit distance is a widely used distance measure for labelled graph. However, <span class="typewriter">A&#42;-GED</span>, the standard approach for its exact computation, suffers from huge runtime and memory requirements. Recently, three better performing algorithms have been proposed: The general algorithms <span class="typewriter">DF-GED</span> and <span class="typewriter">BIP-GED</span>, and the algorithm <span class="typewriter">CSI-GED</span>, which only works for uniform edit costs. All newly proposed algorithms outperform the standard approach <span class="typewriter">A&#42;-GED</span>. However, cross-comparisons are lacking. This paper consolidates and extends these recent advances. To this purpose, we present all existing algorithms in a unified way and show that the slightly different definitions of the graph edit distance underlying <span class="typewriter">A&#42;-GED</span> and <span class="typewriter">DF-GED</span>, on the one side, and <span class="typewriter">CSI-GED</span>, on the other side, can be harmonised. This harmonisation allows us to develop a generalisation of <span class="typewriter">CSI-GED</span> to non-uniform edit cost. Moreover, we present a speed-up of <span class="typewriter">A&#42;-GED</span> and <span class="typewriter">DF-GED</span> for uniform edit costs, which build upon the fact that, in the uniform case, a continuously used subroutine can be implemented to run in linear rather than cubic time. We also suggest an algorithm <span class="typewriter">MIP-GED</span> which builds upon a very compact new mixed integer linear programming formulation. Finally, we carry out a thorough empirical evaluation, which, for the first time, compares all existing exact algorithms.
+							</p>
+							<p>
+								<a href="https://doi.org/10.1016/j.patrec.2018.05.002" target="_blank">doi</a> | <a href="res/prl2020a.bib" target="_blank">bibtex</a>
+							</p>
+						</div>
+					</div>
+				</div> 
+				<!-- PRL 2020 (Fast linear sum ...)-->
+				<div class="wrap-collabsible left-align">
+					<input id="prl2020b" class="toggle" type="checkbox">
+					<label for="prl2020b" class="lbl-toggle">
+						<strong>[2020]</strong> S&eacute;bastien Bougleux, Benoit Ga&uuml;z&egrave;re, David B. Blumenthal, and Luc Brun:
+						&ldquo;Fast linear sum assignment with error-correction and no cost constraints&rdquo;,
+						<strong>Pattern Recognit. Lett. 134</strong>, pp. 37-45.
+					</label>
+					<div class="collapsible-content">
+						<div class="content-inner">
+							<p>
+								<strong>Abstract</strong> We propose an algorithm that efficiently solves the linear sum assignment problem with error-correction and no cost constraints. This problem is encountered for instance in the approximation of the graph edit distance. The fastest currently available solvers for the linear sum assignment problem require the pairwise costs to respect the triangle inequality. Our algorithm is as fast as these algorithms, but manages to drop the cost constraint. The main technical ingredient of our algorithm is a cost-dependent factorization of the node substitutions.
+							</p>
+							<p>
+								<a href="https://doi.org/10.1016/j.patrec.2018.03.032" target="_blank">doi</a> | <a href="res/prl2020b.bib" target="_blank">bibtex</a>
 							</p>
 						</div>
 					</div>
@@ -319,44 +356,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- PRL 2018 (On the exact ...)-->
-				<div class="wrap-collabsible left-align">
-					<input id="prl2018a" class="toggle" type="checkbox">
-					<label for="prl2018a" class="lbl-toggle">
-						<strong>[2018]</strong> David B. Blumenthal and Johann Gamper:
-						&ldquo;On the exact computation of the graph edit distance&rdquo;,
-						<strong>Pattern Recognit. Lett.</strong>, in press.
-					</label>
-					<div class="collapsible-content">
-						<div class="content-inner">
-							<p>
-								<strong>Abstract</strong> The graph edit distance is a widely used distance measure for labelled graph. However, <span class="typewriter">A&#42;-GED</span>, the standard approach for its exact computation, suffers from huge runtime and memory requirements. Recently, three better performing algorithms have been proposed: The general algorithms <span class="typewriter">DF-GED</span> and <span class="typewriter">BIP-GED</span>, and the algorithm <span class="typewriter">CSI-GED</span>, which only works for uniform edit costs. All newly proposed algorithms outperform the standard approach <span class="typewriter">A&#42;-GED</span>. However, cross-comparisons are lacking. This paper consolidates and extends these recent advances. To this purpose, we present all existing algorithms in a unified way and show that the slightly different definitions of the graph edit distance underlying <span class="typewriter">A&#42;-GED</span> and <span class="typewriter">DF-GED</span>, on the one side, and <span class="typewriter">CSI-GED</span>, on the other side, can be harmonised. This harmonisation allows us to develop a generalisation of <span class="typewriter">CSI-GED</span> to non-uniform edit cost. Moreover, we present a speed-up of <span class="typewriter">A&#42;-GED</span> and <span class="typewriter">DF-GED</span> for uniform edit costs, which build upon the fact that, in the uniform case, a continuously used subroutine can be implemented to run in linear rather than cubic time. We also suggest an algorithm <span class="typewriter">MIP-GED</span> which builds upon a very compact new mixed integer linear programming formulation. Finally, we carry out a thorough empirical evaluation, which, for the first time, compares all existing exact algorithms.
-							</p>
-							<p>
-								<a href="https://doi.org/10.1016/j.patrec.2018.05.002" target="_blank">doi</a> | <a href="res/prl2018a.bib" target="_blank">bibtex</a>
-							</p>
-						</div>
-					</div>
-				</div> 
-				<!-- PRL 2018 (Fast linear sum ...)-->
-				<div class="wrap-collabsible left-align">
-					<input id="prl2018b" class="toggle" type="checkbox">
-					<label for="prl2018b" class="lbl-toggle">
-						<strong>[2018]</strong> S&eacute;bastien Bougleux, Benoit Ga&uuml;z&egrave;re, David B. Blumenthal, and Luc Brun:
-						&ldquo;Fast linear sum assignment with error-correction and no cost constraints&rdquo;,
-						<strong>Pattern Recognit. Lett.</strong>, in press.
-					</label>
-					<div class="collapsible-content">
-						<div class="content-inner">
-							<p>
-								<strong>Abstract</strong> We propose an algorithm that efficiently solves the linear sum assignment problem with error-correction and no cost constraints. This problem is encountered for instance in the approximation of the graph edit distance. The fastest currently available solvers for the linear sum assignment problem require the pairwise costs to respect the triangle inequality. Our algorithm is as fast as these algorithms, but manages to drop the cost constraint. The main technical ingredient of our algorithm is a cost-dependent factorization of the node substitutions.
-							</p>
-							<p>
-								<a href="https://doi.org/10.1016/j.patrec.2018.03.032" target="_blank">doi</a> | <a href="res/prl2018b.bib" target="_blank">bibtex</a>
-							</p>
-						</div>
-					</div>
-				</div> 
 				<!-- TKDE 2018 -->
 				<div class="wrap-collabsible left-align">
 					<input id="tkde2018" class="toggle" type="checkbox">
