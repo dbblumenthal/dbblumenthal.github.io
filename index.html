@@ -54,10 +54,7 @@
 						document.write("<a href="+"mail"+"to:"+email+"@"+domain+">"+"[firstname].[lastname]@wzw.tum.de"+"<\/a>")
 					</script><br>
 					<a itemprop="sameAs" content="https://orcid.org/0000-0001-8651-750X" href="https://orcid.org/0000-0001-8651-750X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0001-8651-750X</a><br>
-					Office OLG-L 10<br>
-					Maximus-von-Imhof-Forum 3<br>
-					85354 Freising-Weihenstephan<br>
-					Germany
+					<a itemprop="sameAs" content="https://github.com/dbblumenthal" href="https://github.com/dbblumenthal" target="github.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="img/github.png" style="width:1em;margin-right:.5em;" alt="GitHub mark">github.com/dbblumenthal</a><br>
 				</p>
 			</section>
 
@@ -134,6 +131,41 @@
 				<p class="left-align">
 					This is a complete list of my research publications. Also see my profiles on <a href="https://www.researchgate.net/profile/David_Blumenthal3" target="_blank">ResearchGate</a>, <a href="https://www.scopus.com/authid/detail.uri?authorId=57194270076" target="_blank">Scopus</a>, <a href="https://orcid.org/0000-0001-8651-750X" target="_blank">ORCiD</a>, <a href="https://dblp.uni-trier.de/pers/hd/b/Blumenthal:David_B=" target="_blank">dblp</a>, and <a href="https://scholar.google.com/citations?user=B3DmHU4AAAAJ&hl=en" target="_blank">Google Scholar</a>. If you have problems accessing a paper you are interested in, feel free to contact me.
 				</p>
+				<!-- Bioinf. 2020b -->
+				<div class="wrap-collabsible left-align">
+					<input id="bioinf2020b" class="toggle" type="checkbox">
+					<label for="bioinf2020b" class="lbl-toggle">
+						<strong>[2020]</strong> D. B. Blumenthal, J. Baumbach, M. Hoffmann, T. Kacprowski, M. List:
+						&ldquo;A framework for modeling epistatic interaction&rdquo;,
+						<strong>Bioinformatics</strong>, in press.
+					</label>
+					<div class="collapsible-content">
+						<div class="content-inner">
+							<p>
+								<strong>Abstract</strong> 
+								<p>
+									<strong>Motivation:</strong>
+									Recently, various tools for detecting single nucleotide polymorphisms (SNPs) involved in epistasis have been developed. However, no studies evaluate the employed statistical epistasis models such as the &chi;<sup>2</sup>-test or quadratic regression independently of the tools that use them. Such an independent evaluation is crucial for developing improved epistasis detection tools, for it allows to decide if a tool's performance should be attributed to the epistasis model or to the optimization strategy run on top of it.
+								</p>
+								<p>
+									<strong>Results:</strong>
+									We present a protocol for evaluating epistasis models independently of the tools they are used in and generalize existing models designed for dichotomous phenotypes to the categorical and quantitative case. Additionally, we propose a new model which scores candidate SNP sets by computing maximum likelihood distributions for the observed phenotypes in the cells of their penetrance tables. Extensive experiments show that the proposed maximum likelihood model outperforms three widely used epistasis models in most cases. The experiments also provide valuable insights into the properties of existing models, for instance, that quadratic regression perform particularly well on instances with quantitative phenotypes.
+								</p>
+								<p>
+									<strong>Availability and implementation:</strong>
+									The evaluation protocol and all compared models are implemented in C++ and are supported under Linux and macOS. They are available at <a href="https://github.com/baumbachlab/genepiseeker" target="_blank">https://github.com/baumbachlab/genepiseeker</a>, along with test datasets and scripts to reproduce the experiments.
+								</p>
+								<p>
+									<strong>Supplementary information:</strong>
+									Supplementary information is available at <i>Bioinformatics</i> online.
+								</p>
+							</p>
+							<p>
+								<a href="https://doi.org/10.1093/bioinformatics/btaa990" target="_blank">doi</a> | <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa245/5820008?guestAccessKey=2385c5f1-6587-4065-b2f2-1039765fa5b6" target="_blank">paper</a> | <a href="res/bioinf2020b.bib" target="_blank">bibtex</a>
+							</p>
+						</div>
+					</div>
+				</div>
 				<!-- ASSAY 2020 -->
 				<div class="wrap-collabsible left-align">
 					<input id="assay2020" class="toggle" type="checkbox">
@@ -148,7 +180,7 @@
 								<strong>Abstract</strong> Coronavirus disease 2019 (COVID-19), caused by the SARS-CoV-2 virus, has developed into a pandemic causing major disruptions and hundreds of thousands of deaths in wide parts of the world. As of July 3, 2020, neither vaccines nor approved drugs for effective treatment are available. In this paper, we showcase how to individuate drug targets and potentially repurposable drugs in silico using CoVex (<a href="https://exbio.wzw.tum.de/covex/" target="_blank">https://exbio.wzw.tum.de/covex/</a>), a recently presented systems medicine platform for COVID-19 drug repurposing. Starting from initial hypotheses, CoVex leverages network algorithms to individuate host proteins involved in COVID-19 disease mechanisms, as well as existing drugs targeting these potential drug targets. Our analysis reveals GLA, PLAT, and GGCX as potential drug targets, and urokinase, argatroban, dabigatran etexilate, betrixaban, ximelagatran and anisindione as potentially repurposable drugs.
 							</p>
 							<p>
-								<a href="https://doi.org/XXX" target="_blank">doi</a> | <a href="res/assay2020.pdf" target="_blank">paper</a> | <a href="res/assay2020.bib" target="_blank">bibtex</a>
+								<a href="https://doi.org/10.1089/adt.2020.1010" target="_blank">doi</a> | <a href="res/assay2020.bib" target="_blank">bibtex</a>
 							</p>
 						</div>
 					</div>
@@ -208,11 +240,11 @@
 									Simulated data is crucial for evaluating epistasis detection tools in genome-wide association studies. Existing simulators are limited, as they do not account for linkage disequilibrium (LD), support limited interaction models of single nucleotide polymorphisms (SNPs) and only dichotomous phenotypes, or depend on proprietary software. In contrast, EpiGEN supports SNP interactions of arbitrary order, produces realistic LD patterns, and can generate both categorical and quantitative phenotypes.
 								</p>
 								<p>
-									<strong>Availability and Implementation:</strong>
+									<strong>Availability and implementation:</strong>
 									EpiGEN is implemented in Python 3 and is freely available at <a href="https://github.com/baumbachlab/epigen" target="_blank">https://github.com/baumbachlab/epigen</a>.
 								</p>
 								<p>
-									<strong>Supplementary Information:</strong>
+									<strong>Supplementary information:</strong>
 									A detailed user guide for EpiGEN is available at <i>Bioinformatics</i> online.
 								</p>
 							</p>
@@ -582,13 +614,13 @@
 					<dd>
 						HCC 2019.
 					</dd>
-					<dt><strong>Reviewer</strong></dt>
+					<dt><strong>Reviewing for Journals</strong></dt>
 					<dd>
-						Nature Computational Science (2020), BioData Mining (2020), Information Sciences (2020), European Journal of Operational Research (2020), Pattern Recognition Letters (2018, 2019), Information Systems Frontiers (2019), ICPR 2018.
+						BioData Mining, European Journal of Operational Research, Information Sciences, Information Systems Frontiers, Nature Computational Science, Pattern Analysis and Applications, Pattern Recognition Letters.
 					</dd>
-					<dt><strong>External Reviewer</strong></dt> 
+					<dt><strong>Reviewing for Conferences</strong></dt> 
 					<dd>
-						VLDB 2017, EDBT 2017, ICDE 2016.
+						ICPR 2018, VLDB 2017, EDBT 2017, ICDE 2016.
 					</dd>
 				</dl>
 			</div>
